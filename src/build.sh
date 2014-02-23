@@ -1,13 +1,16 @@
 #! /usr/bin/env bash
 
+SOURCE="./org/greydamian/netbatjava/Netbat.java";
+OUTPUT="../bin/netbat.jar";
+
 # create output directory
 mkdir -p ../bin/classes;
 
 # compile java source code
-javac -d ../bin/classes `find . -name '*.java'`;
+javac -d ../bin/classes $SOURCE;
 
 # create executable jar file
-jar cfm ../bin/netbat.jar ./Manifest.txt -C ../bin/classes/ .;
+jar cfm $OUTPUT ./Manifest.txt -C ../bin/classes/ .;
 
 # remove compiled class files
 rm -r ../bin/classes;
