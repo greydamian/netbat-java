@@ -16,6 +16,6 @@ rem remove compiled class files
 rmdir /q /s ..\bin\classes
 
 rem create execution script
-echo @echo off >..\bin\netbat.bat
-echo. >>..\bin\netbat.bat
+echo @echo off >..\bin\netbat-java.bat
+echo. >>..\bin\netbat-java.bat
 echo java -jar .\netbat.jar %%* >>..\bin\netbat-java.bat
