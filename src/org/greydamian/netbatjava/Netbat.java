@@ -8,6 +8,7 @@
 package org.greydamian.netbatjava;
 
 import java.lang.Exception;
+import java.lang.Runnable;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -15,13 +16,11 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import java.lang.Runnable;
-
 /**
  * Represents the <code>netbat-java</code> program.
  *
  * @author  Damian Jason Lapidge <grey@greydamian.org>
- * @version 1.0
+ * @version 1.0.0
  */
 public class Netbat {
     /**
@@ -29,8 +28,8 @@ public class Netbat {
      * and then writes that data to some output.
      *
      * @author  Damian Jason Lapidge <grey@greydamian.org>
-     * @version 1.0
-     * @since   1.0
+     * @version 1.0.0
+     * @since   1.0.0
      */
     private static class Receiver implements Runnable {
         private static final int BUFSIZE = 1024;
@@ -70,7 +69,6 @@ public class Netbat {
             }
             catch (Exception e) {
                 System.err.println("error: failure receiving data");
-                System.err.println(e);
             }
         }
     }
@@ -80,8 +78,8 @@ public class Netbat {
      * and then writes that data to a socket.
      *
      * @author  Damian Jason Lapidge <grey@greydamian.org>
-     * @version 1.0
-     * @since   1.0
+     * @version 1.0.0
+     * @since   1.0.0
      */
     private static class Sender implements Runnable {
         private static final int BUFSIZE = 1024;
@@ -121,7 +119,6 @@ public class Netbat {
             }
             catch (Exception e) {
                 System.err.println("error: failure sending data");
-                System.err.println(e);
             }
         }
     }
@@ -130,8 +127,8 @@ public class Netbat {
      * Represents parsed command-line arguments.
      *
      * @author  Damian Jason Lapidge <grey@greydamian.org>
-     * @version 1.0
-     * @since   1.0
+     * @version 1.0.0
+     * @since   1.0.0
      */
     private static class Options {
         public String host = null;
@@ -222,7 +219,7 @@ public class Netbat {
         catch (Exception e) {
             System.err.println("error: failure starting receiver/sender " + 
                                "thread");
-            System.exit(1);
+            System.exit(1); /* exit failure */
         }
 
         /* join receiver thread */
