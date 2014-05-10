@@ -23,52 +23,50 @@ and is a much more fully-featured utility.
 Compatibility
 -------------
 
-    * Linux
-    * Unix
-    * OS X
-    * Windows
+* Linux
+* Unix
+* OS X
+* Windows
 
 Installation
 ------------
 
-    Linux/Unix/OS X
-    ---------------
+### Linux/Unix/OS X
 
-    Full installation of netbat-java is a 2 step process. However, the second 
-    step is optional.
+Full installation of netbat-java is a 2 step process. However, the second step 
+is optional.
 
-    Firstly, navigate to the src directory and run the following command:
+Firstly, navigate to the src directory and run the following command:
 
-        $ bash build.sh
+    $ bash build.sh
 
-    Once this has completed, you can run netbat-java by navigating to the bin 
-    directory and running the following command:
+Once this has completed, you can run netbat-java by navigating to the bin 
+directory and running the following command:
 
-        $ ./netbat-java
+    $ ./netbat-java
 
-    Secondly, and optionally, you can install netbat-java system-wide by 
-    copying the contents of the bin directory into your path. For example, you 
-    could execute a command such as:
+Secondly, and optionally, you can install netbat-java system-wide by copying 
+the contents of the bin directory into your path. For example, you could 
+execute a command such as:
 
-        # cp bin/* /usr/local/bin/
+    # cp bin/* /usr/local/bin/
 
-    Windows
-    -------
+### Windows
 
-    Full installation of netbat-java on MS Windows is a 2 step process. 
-    However, the second step is optional.
+Full installation of netbat-java on MS Windows is a 2 step process. However, 
+the second step is optional.
 
-    Firstly, navigate to the src directory and run the following command:
+Firstly, navigate to the src directory and run the following command:
 
-        > build
+    > build
 
-    Once this has completed, you can run netbat-java by navigating to the bin 
-    directory and running the following command:
+Once this has completed, you can run netbat-java by navigating to the bin 
+directory and running the following command:
 
-        > netbat-java
+    > netbat-java
 
-    Secondly, and optionally, you can install netbat-java system-wide by adding 
-    the contents of the bin directory to your command path.
+Secondly, and optionally, you can install netbat-java system-wide by adding the 
+contents of the bin directory to your command path.
 
 Examples
 --------
@@ -94,16 +92,16 @@ following commands on their respective hosts:
 After executing the previous commands, anything typed as input to one of the 
 commands will be displayed as output from the other and vice-versa. Supplying 
 EOF (End Of File) to one of the programs will terminate the session, this can 
-usually be done by typing [Ctrl] + [D] (on Unix-like systems) or [Ctrl] + [Z] 
-(on MS Windows).
+usually be done by typing [Ctrl] + [D] \(on Unix-like systems\) or [Ctrl] + [Z] 
+\(on MS Windows\).
 
 N.B. The previous example presumes that host-a has the IP address 192.168.0.2.
 
 Netbat-java can be used to send a HTTP request to a web server, and display the
 response, by executing the following command:
 
-    $ echo -ne 'GET / HTTP/1.1\r\nHost: 192.168.0.1\r\n' \
-      'Connection: close\r\n\r\n' | netbat-java 192.168.0.1 80
+    $ echo -ne 'GET / HTTP/1.1\r\nHost: 192.168.0.1\r\n'\
+    > 'Connection: close\r\n\r\n' | netbat-java 192.168.0.1 80
 
 N.B. The previous example utilises a Unix-like echo command, and thus will not
 work on MS Windows. The previous example also presumes the web server is 
