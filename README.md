@@ -17,7 +17,7 @@ from the TCP stream.
 My motivation for writing netbat-java was to produce a platform independant 
 version on netbat. As with netbat, netbat-java was heavily influenced by 
 attempting to emulate some behaviours of the Netcat program 
-(http://nc110.sourceforge.net/), which was originally developed by *Hobbit*, 
+(http://nc110.sourceforge.net/), which was originally developed by \*Hobbit\*, 
 and is a much more fully-featured utility.
 
 Compatibility
