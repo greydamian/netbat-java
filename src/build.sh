@@ -15,10 +15,13 @@ jar cfm $OUTPUT ./Manifest.txt -C ../bin/classes/ .;
 # remove compiled class files
 rm -r ../bin/classes;
 
-# create execution script
-echo '#! /usr/bin/env bash
+# create execution script (here document)
+cat <<EOF >../bin/netbat-java.sh;
+#! /usr/bin/env bash
 
-java -jar ./netbat.jar $@;' > ../bin/netbat-java.sh;
+java -jar ./netbat.jar \$@;
+
+EOF
 chmod +x ../bin/netbat-java.sh;
 
 ln -s ./netbat-java.sh ../bin/netbat-java;
