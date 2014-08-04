@@ -23,10 +23,14 @@ and is a much more fully-featured utility.
 Compatibility
 -------------
 
-* Linux
-* Unix
-* OS X
-* Windows
+* Linux (plus sublist requirements)
+    * JRE 7+
+* Unix (plus sublist requirements)
+    * JRE 7+
+* OS X (plus sublist requirements)
+    * JRE 7+
+* Windows (plus sublist requirements)
+    * JRE 7+
 
 Installation
 ------------
