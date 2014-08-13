@@ -23,14 +23,14 @@ and is a much more fully-featured utility.
 Compatibility
 -------------
 
-* Linux (plus sublist requirements)
-    * JRE 7+
-* Unix (plus sublist requirements)
-    * JRE 7+
-* OS X (plus sublist requirements)
-    * JRE 7+
-* Windows (plus sublist requirements)
-    * JRE 7+
+* Linux (with dependencies from sublist)
+    * JRE (Java Runtime Environment) >= 7
+* Unix (with dependencies from sublist)
+    * JRE (Java Runtime Environment) >= 7
+* OS X (with dependencies from sublist)
+    * JRE (Java Runtime Environment) >= 7
+* Windows (with dependencies from sublist)
+    * JRE (Java Runtime Environment) >= 7
 
 Installation
 ------------
@@ -117,4 +117,3 @@ License
 Copyright (c) 2014 Damian Jason Lapidge
 
 Licensing terms and conditions can be found within the file LICENSE.txt.
-
