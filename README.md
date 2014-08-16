@@ -24,13 +24,13 @@ Compatibility
 -------------
 
 * Linux (with dependencies from sublist)
-    * JRE (Java Runtime Environment) >= 7
+  * JRE (Java Runtime Environment) >= 7
 * Unix (with dependencies from sublist)
-    * JRE (Java Runtime Environment) >= 7
+  * JRE (Java Runtime Environment) >= 7
 * OS X (with dependencies from sublist)
-    * JRE (Java Runtime Environment) >= 7
+  * JRE (Java Runtime Environment) >= 7
 * Windows (with dependencies from sublist)
-    * JRE (Java Runtime Environment) >= 7
+  * JRE (Java Runtime Environment) >= 7
 
 Installation
 ------------
