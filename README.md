@@ -4,8 +4,8 @@ netbat-java
 Overview
 --------
 
-Netbat-java is basically a Java translation of the netbat program. Like netbat, 
-it's a simple TCP client/server utility program.
+Simple TCP client/server utility program. Java translation of 
+[netbat](https://github.com/greydamian/netbat).
 
 Netbat-java can act as either a TCP client or TCP server. Data is concurrently 
 read from standard input (stdin) then written to the TCP stream and read from 
@@ -16,9 +16,9 @@ from the TCP stream.
 
 My motivation for writing netbat-java was to produce a platform independant 
 version on netbat. As with netbat, netbat-java was heavily influenced by 
-attempting to emulate some behaviours of the Netcat program 
-(http://nc110.sourceforge.net/), which was originally developed by \*Hobbit\*, 
-and is a much more fully-featured utility.
+attempting to emulate some behaviours of the 
+[Netcat](http://nc110.sourceforge.net/) program, which was originally developed 
+by \*Hobbit\*, and is a much more fully-featured utility.
 
 Compatibility
 -------------
