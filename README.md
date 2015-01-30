@@ -27,24 +27,25 @@ Compatibility
   * JRE (Java Runtime Environment) >= 7
 * Unix (with dependencies from sublist)
   * JRE (Java Runtime Environment) >= 7
-* OS X (with dependencies from sublist)
+* Apple OS X (with dependencies from sublist)
   * JRE (Java Runtime Environment) >= 7
-* Windows (with dependencies from sublist)
+* Microsoft Windows (with dependencies from sublist)
   * JRE (Java Runtime Environment) >= 7
 
 Installation
 ------------
 
-### Linux/Unix/OS X
+### Linux/Unix/Apple OS X
 
 Full installation of netbat-java is a 2 step process. However, the second step 
 is optional.
 
-Firstly, navigate to the src directory and run the following command:
+Firstly, navigate into the root directory of the project and run the following 
+command:
 
     $ bash build.sh
 
-Once this has completed, you can run netbat-java by navigating to the bin 
+Once this has completed, you can run netbat-java by navigating into the bin 
 directory and running the following command:
 
     $ ./netbat-java
@@ -55,16 +56,17 @@ execute a command such as:
 
     # cp bin/* /usr/local/bin/
 
-### Windows
+### Microsoft Windows
 
 Full installation of netbat-java on MS Windows is a 2 step process. However, 
 the second step is optional.
 
-Firstly, navigate to the src directory and run the following command:
+Firstly, navigate into the root directory of the project and run the 
+following command:
 
     > build
 
-Once this has completed, you can run netbat-java by navigating to the bin 
+Once this has completed, you can run netbat-java by navigating into the bin 
 directory and running the following command:
 
     > netbat-java
@@ -114,6 +116,7 @@ running on port 80 of the host with IP address 192.168.0.1.
 License
 -------
 
-Copyright (c) 2014 Damian Jason Lapidge
+Copyright (c) 2015 Damian Jason Lapidge
 
 Licensing terms and conditions can be found within the file LICENSE.txt.
+
