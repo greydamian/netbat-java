@@ -8,6 +8,8 @@ rem within the file LICENSE.txt, located within this project's root directory.
 set SRC=.\src\org\greydamian\netbatjava\Netbat.java
 set OUT=.\bin\netbat.jar
 
+set MAINCLASS=org.greydamian.netbatjava.Netbat
+
 rem create output directory
 mkdir .\bin\classes
 
@@ -15,7 +17,7 @@ rem compile java source code
 javac -d .\bin\classes %SRC%
 
 rem create executable jar file
-jar cfm %OUT% .\src\Manifest.txt -C .\bin\classes\ .
+jar cfe %OUT% %MAINCLASS% -C .\bin\classes\ .
 
 rem remove compiled class files
 rmdir /q /s .\bin\classes

@@ -8,6 +8,8 @@
 SRC="./src/org/greydamian/netbatjava/Netbat.java";
 OUT="./bin/netbat.jar";
 
+MAINCLASS="org.greydamian.netbatjava.Netbat";
+
 # create output directory
 mkdir -p ./bin/classes;
 
@@ -15,7 +17,7 @@ mkdir -p ./bin/classes;
 javac -d ./bin/classes $SRC;
 
 # create executable jar file
-jar cfm $OUT ./src/Manifest.txt -C ./bin/classes/ .;
+jar cfe $OUT $MAINCLASS -C ./bin/classes/ .;
 
 # remove compiled class files
 rm -r ./bin/classes;
