@@ -26,7 +26,7 @@ rm -r ./bin/classes;
 cat <<EOF >./bin/netbat-java.sh;
 #! /usr/bin/env bash
 
-java -jar ./netbat.jar \$@;
+java -jar \$(dirname \$0)/netbat.jar \$@;
 
 EOF
 chmod +x ./bin/netbat-java.sh;
