@@ -25,4 +25,4 @@ rmdir /q /s .\bin\classes
 rem create execution script
 echo @echo off >.\bin\netbat-java.bat
 echo. >>.\bin\netbat-java.bat
-echo java -jar .\netbat.jar %%* >>.\bin\netbat-java.bat
+echo java -jar %%~dp0.\netbat.jar %%* >>.\bin\netbat-java.bat
