@@ -5,31 +5,42 @@
 # The contents of this file are subject to the terms and conditions defined 
 # within the file LICENSE.txt, located within this project's root directory.
 
+# compiler, archiver, and runtime commands (could specify absolute paths)
+JAVAC="javac";
+JAR="jar";
+JAVA="java";
+
+# output directory for class files
+CLASSDIR="./bin/classes";
+
+# application entry point
+MAINCLASS="org.greydamian.netbatjava.Netbat";
+
 SRC="./src/org/greydamian/netbatjava/Netbat.java";
 OUT="./bin/netbat.jar";
 
-MAINCLASS="org.greydamian.netbatjava.Netbat";
-
 # create output directory
-mkdir -p ./bin/classes;
+mkdir -p $(dirname $OUT);
+mkdir -p $CLASSDIR;
 
 # compile java source code
-javac -d ./bin/classes $SRC;
+$JAVAC -d $CLASSDIR $SRC;
 
 # create executable jar file
-jar cfe $OUT $MAINCLASS -C ./bin/classes/ .;
+$JAR cfe $OUT $MAINCLASS -C $CLASSDIR .;
 
 # remove compiled class files
-rm -r ./bin/classes;
+rm -r $CLASSDIR;
 
 # create execution script (here document)
 cat <<EOF >./bin/netbat-java.sh;
 #! /usr/bin/env bash
 
-java -jar \$(dirname \$0)/netbat.jar \$@;
+$JAVA -jar \$(dirname \$0)/netbat.jar \$@;
 
 EOF
 chmod +x ./bin/netbat-java.sh;
 
+# create symlink to execution script
 ln -s ./netbat-java.sh ./bin/netbat-java;
 
