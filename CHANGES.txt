@@ -1,4 +1,0 @@
-netbat-java 1.0
-----------
-* initial release
-
